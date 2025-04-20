@@ -1,5 +1,0 @@
-itempage--> link to the user profile where it shows all the items listed by the user
-homepage, paging concept in the backend
-
-make the images , get saved in cloudinary's profile_pics folder
-mongodb password change as well
