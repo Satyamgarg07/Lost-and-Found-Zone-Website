@@ -14,7 +14,7 @@ export const createItem = async (req, res) => {
     if (images && images.length > 0) {
       // Upload each base64 image to cloudinary
       const uploadPromises = images.map((base64String) =>
-        uploadToCloudinary(base64String)
+        uploadToCloudinary(base64String, "items-pics")
       );
       imageUrls = await Promise.all(uploadPromises);
     }
@@ -184,7 +184,7 @@ export const updateItem = async (req, res) => {
 
         // Upload new images to Cloudinary
         const uploadPromises = images.map((base64String) =>
-          uploadToCloudinary(base64String)
+          uploadToCloudinary(base64String, "items-pics")
         );
         imageUrls = await Promise.all(uploadPromises);
       } catch (error) {
