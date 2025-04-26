@@ -15,12 +15,12 @@ const Footer = () => {
           {/* Left side - Copyright and Name */}
           <div className="text-center md:text-left">
             <p className="text-sm md:text-base">
-              © 2024 Lost & Found. All rights reserved.
+              © 2025 Lost & Found. All rights reserved.
             </p>
             <p className="text-sm md:text-base mt-1">
               Developed by{" "}
               <span className="font-semibold hover:text-gray-300 cursor-pointer">
-                Kazim Abbas
+                Satyam Garg
               </span>
             </p>
           </div>

@@ -35,11 +35,9 @@ const Inspiration = () => {
           </h2>
         </div>
         <p className="text-center text-lg md:text-xl text-gray-700 dark:text-gray-300 mt-3 max-w-[95%] md:max-w-[90%]">
-        Losing my 3000 PKR phone charger in the university library and 
-        being denied access to CCTV footage left me frustrated. 
-        That experience inspired me to create a lost-and-found listing website,
-         a solution to help students easily report and 
-        recover misplaced items, turning a personal inconvenience into a project with a meaningful purpose.
+        While being part of my college's WhatsApp groups, I often noticed students posting messages about lost or found items on campus — things like ID cards, wallets, books, water bottles, umbrellas, and even gadgets. Every day, several students would ask if anyone had seen or found their belongings, and sometimes it took a lot of time and scrolling through hundreds of unrelated messages to find a helpful response.<br></br><br></br>
+        This made me realize that there’s no centralized, organized system for handling lost and found items in our college. Most of the time, even if someone found an item, there was no easy way to match it with the person who lost it — leading to frustration, wasted time, and sometimes lost hope.<br></br><br></br>
+        That's where the idea for a Lost and Found Website came from — a dedicated platform where students can quickly post about lost items, view found items, search by category, and get notified when someone finds what they lost. It would make the whole process faster, easier, and way more reliable compared to posting in busy group chats.
         </p>
         <Link
           to="/auth"
