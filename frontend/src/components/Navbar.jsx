@@ -6,7 +6,7 @@ import { authAtom } from "../atoms/authAtom";
 import { userAtom } from "../atoms/userAtom";
 import useLogout from "../hooks/useLogout";
 import { showSuccessToast, showErrorToast } from "./CustomToast";
-import Logo from "../assets/Logo.png";
+import Logo from "../assets/temp-Logo.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
