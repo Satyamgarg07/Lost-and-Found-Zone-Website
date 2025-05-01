@@ -17,13 +17,14 @@ const app = express();
 
 
 app.use(express.json({ limit: "50mb" }));
+app.use(express.static(path.join(__dirname, 'frontend/dist')));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use(cookieParser());
 
 // Add CORS configuration before routes
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || "http://localhost:3000", // Replace with your frontend URL
+    origin: process.env.FRONTEND_URL || "https://lost-and-found-frontend-a2a6.onrender.com", // Replace with your frontend URL
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
@@ -34,6 +35,13 @@ app.use("/api/users", userRoutes);
 app.use("/api/items", itemRoutes);
 app.use("/api/responses", responseRoutes);
 
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'frontend/dist', 'index.html'));
+});
+
+app.post('/api/login', (req, res) => {
+  res.json({ message: 'Login success' });
+});
 
 app.get('/', (req, res) => {
   res.send('Welcome to the Lost & Found Zone API');
